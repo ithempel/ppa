@@ -88,10 +88,11 @@ define ppa::repo(
         }
         if ($apt_key) {
           ppa::key { $apt_key:
-            keyserver => $keyserver
+            ensure    => present,
+            keyserver => $keyserver,
           }
           Exec["update apt repositories for ${name}"] {
-            require => ppa::key[$apt_key],
+            require => Ppa::Key[$apt_key],
           }
         }
       }
@@ -106,6 +107,11 @@ define ppa::repo(
     absent:  {
       File[$ppa_config_file] {
         ensure => false
+      }
+      if ($apt_key) {
+        ppa::key { $apt_key:
+          ensure => absent,
+        }
       }
     }
     default: {
