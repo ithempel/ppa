@@ -35,6 +35,16 @@
 #    ensure => absent,
 #  }
 #
+# === Authors
+#
+# Daniel Hahler @blueyed
+# Sebastian Hempel <shempel@it-hempel.de>
+#
+# === Copyright
+#
+# Copyright 2011 Daniel Hahler
+# Copyright 2013 Sebastian Hempel
+#
 define ppa::key(
   $ensure = present,
   $keyserver = 'keyserver.ubuntu.com'
