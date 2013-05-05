@@ -1,4 +1,4 @@
-name 'ppa'
+name 'ithempel-ppa'
 version '1.0.0'
 source 'git://github.com/ithempel/ppa'
 author 'Sebastian Hempel'
