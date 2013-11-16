@@ -70,7 +70,7 @@ define ppa::repo(
   $apt_key = '',
   $comment = '',
   $dist = $lsbdistcodename,
-  $supported = ['lucis', 'maverick', 'natty', 'oneiric', 'precise', 'quantal'],
+  $supported = ['lucid', 'maverick', 'natty', 'oneiric', 'precise', 'quantal'],
   $keyserver = 'keyserver.ubuntu.com'
 ) {
   $ppa_file_name = regsubst($name, '/', '-', 'G')
