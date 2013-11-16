@@ -1,0 +1,13 @@
+{
+  "name": "ithempel-ppa",
+  "version": "1.0.2",
+  "summary": "defines for PPAs",
+  "author": "Sebastian Hempel",
+  "description": "Defines to handle the management of PPAs",
+  "dependencies": [],
+  "types": [],
+  "checksums": {},
+  "source": "git://github.com/ithempel/ppa",
+  "project_page": "https://github.com/ithempel/ppa",
+  "license": "Apache 2.0"
+}

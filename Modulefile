@@ -1,5 +1,5 @@
 name 'ithempel-ppa'
-version '1.0.1'
+version '1.0.2'
 source 'git://github.com/ithempel/ppa'
 author 'Sebastian Hempel'
 license 'Apache 2.0'
